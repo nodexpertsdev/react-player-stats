@@ -21,3 +21,4 @@ react-meteor-data
 # dynamic-import
 static-html
 kadira:flow-router
+kadira:react-layout
