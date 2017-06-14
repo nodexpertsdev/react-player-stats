@@ -2,7 +2,7 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 
 // Simple React Component to render at startup
-export default class App extends React.Component {
+export default class Stats extends React.Component {
   constructor(props) {
     super(props);
 
@@ -11,11 +11,7 @@ export default class App extends React.Component {
   render() {
 
     return (
-      <div class="app-root">
-        <div class="container">
-          {this.props.yield}
-        </div>
-      </div>
+      <h1>Stats Component</h1>
     );
   }
 }
