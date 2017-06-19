@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "pretest": "npm run lint --silent",
+    "test": "meteor test --once --driver-package dispatch:mocha-phantomjs",
+    "test-watch": "meteor test --driver-package practicalmeteor:mocha",
+    "test-app-watch": "meteor test --full-app --driver-package practicalmeteor:mocha",
+    "lint": "eslint --ext .js,.jsx .",
+    "chimp-watch": "chimp --ddp=http://localhost:3000 --watch --mocha --path=tests"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
