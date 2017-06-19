@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "pretest": "npm run lint --silent",
+    "test": "meteor test --once --driver-package dispatch:mocha-phantomjs",
+    "test-watch": "meteor test --driver-package practicalmeteor:mocha",
+    "test-app-watch": "meteor test --full-app --driver-package practicalmeteor:mocha",
+    "lint": "eslint --ext .js,.jsx .",
+    "chimp-watch": "chimp --ddp=http://localhost:3000 --watch --mocha --path=tests"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "react": "^15.6.1",
+    "react-addons-create-fragment": "^15.6.0",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-linked-state-mixin": "^15.6.0",
+    "react-addons-perf": "^15.4.2",
+    "react-addons-pure-render-mixin": "^15.6.0",
+    "react-addons-test-utils": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
+    "react-addons-update": "^15.6.0",
+    "react-dom": "^15.6.1"
+  }
+}
